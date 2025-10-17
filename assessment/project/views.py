@@ -2,6 +2,38 @@ from django.shortcuts import render,redirect
 from project.models import Signup
 
 # Create your views here.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+from django.shortcuts import render, redirect
+from project.models import Signup
+
+# Create your views here.
+
+
+from django.shortcuts import render, redirect
+from project.models import Signup
+
+ 
+
+
+def afterpage(request):
+    return render(request, "login.html")
+
+
+
+
 def signupage(request):
     if request.method == "POST":
         form_data = request.POST
